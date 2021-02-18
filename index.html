@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FCC Survey Form</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- note that the id attributes are used for the fcc test validation code-->
+
+    <header>
+        <h1 id="title">Quilt Design Feedback Form</h1>
+        <p id="description">help me improve my designs with your feedback</p>
+    </header>
+    <main>
+        <div class="form">
+            <form id="survey-form">
+                <div class="form-fields">
+                    <label for="name" id="name-label">First Name</label><br>
+                    <input type="text" name="name" id="name" class="full-fields" placeholder="enter your name" required>
+                </div>
+                <div class="form-fields">
+                    <label for="email" id="email-label">Email</label><br>
+                    <input type="email" name="email" id="email" class="full-fields" placeholder="enter your email"
+                        required>
+                </div>
+                <div class="form-fields">
+                    <label for="age" id="number-label">Age</label><br>
+                    <input type="number" name="age" id="number" class="full-fields" placeholder="(optional)" min="16"
+                        max="105">
+                </div>
+                <div class="form-fields">
+                    <label for="experience">Quilting Experience</label><br>
+                    <select id="dropdown" class="full-fields" name="experience">
+                        <option disabled selected value>Select an option</option>
+                        <option value="beginner">beginner</option>
+                        <option value="advanced beginner">advanced beginner</option>
+                        <option value="intermediate">intermediate</option>
+                        <option value="expert">expert</option>
+                    </select>
+                </div>
+                <div class="form-fields">
+                    <label for="purchased">Have you purchased online PDF patterns before?</label><br>
+                    <input type="radio" name="purchased" id="purchased-yes" value="yes" checked>
+                    <label for="purchased-yes">Yes</label><br>
+                    <input type="radio" name="purchased" id="purchased-no" value="no">
+                    <label for="purchased-no">No</label><br>
+                    <input type="radio" name="purchased" id="purchased-maybe" value="not sure">
+                    <label for="purchased-maybe">Not Sure</label>
+                </div>
+                <div class="form-fields">
+                    <label for="where">How do you typically buy patterns?</label><br>
+                    <select id="where" name="where" class="full-fields">
+                        <option disabled selected value>Select an option</option>
+                        <option value="at my local quilt shop">at my local quilt shop</option>
+                        <option value="online - paper pattern">online - paper pattern</option>
+                        <option value="online - PDF pattern">online - PDF pattern</option>
+                    </select>
+                </div>
+                <div class="form-fields">
+                    <label>What design elements are your favorite in a quilt?</label><br>
+                    <input type="checkbox" id="modern" name="modern" value="modern">
+                    <label for="modern">modern</label><br>
+                    <input type="checkbox" id="modern" name="traditional" value="traditional">
+                    <label for="traditional">traditional</label><br>
+                    <input type="checkbox" id="traditional-twist" name="traditional-twist" value="traditional-twist">
+                    <label for="traditional-twist">traditional with a twist</label><br>
+                    <input type="checkbox" id="neutrals" name="neutrals" value="neutrals">
+                    <label for="neutrals">neutral colors</label><br>
+                    <input type="checkbox" id="bright" name="bright" value="bright">
+                    <label for="bright">bright colors</label><br>
+                    <input type="checkbox" id="my-colors" name="my-colors" value="my-colors">
+                    <label for="my-colors">colors to match my decor</label><br>
+                    <input type="checkbox" id="cats" name="cats" value="cats">
+                    <label for="cats">cats</label><br>
+                    <input type="checkbox" id="dogs" name="dogs" value="dogs">
+                    <label for="dogs">dogs</label><br>
+                    <input type="checkbox" id="animals" name="animals" value="animals">
+                    <label for="animals">other animals</label><br>
+                    <input type="checkbox" id="easy" name="easy" value="easy">
+                    <label for="easy">easy to make</label><br>
+                    <input type="checkbox" id="moderate" name="moderate" value="moderate">
+                    <label for="moderate">moderate effort</label><br>
+                    <input type="checkbox" id="challenging" name="challenging" value="challenging">
+                    <label for="challenging">challenging to make</label>
+                </div>
+                <div class="form-fields">
+                    <label for="comments">Any comments or suggestions?</label><br>
+                    <textarea id="comments" name="comments" rows="5" cols="60"
+                        class="full-fields">enter comments here</textarea>
+                </div>
+                <div class="submit-button">
+                    <button name="submit" id="submit" type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div> <!-- end form -->
+    </main>
+    <footer>
+        <p>Photo by <a href="https://unsplash.com/@anniespratt" target="_blank">Annie Spratt</a> on <a
+                href="https://unsplash.com/photos/5GsbwkrCfuM" target="_blank">Unsplash</a></p>
+    </footer>
+</body>
+
+</html>
